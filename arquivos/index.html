@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- title -->
     <title>App To Do List</title>
 </head>
 <body>
-    
+    <main>
+        <div class="logo-topo">
+            <h1>Lista de taréfas</h1>
+        </div><!-- fim logo -->
+
+        <div class="inserir">
+            <input class="insert" id="taskInput" type="text" placeholder="Digite sua próxima taréfa...">
+            <button class="add" id="addTaskButton">Adicionar</button>
+        </div><!-- fim inserir -->
+
+        <div class="tarefas">
+            <ul class="lista-tarefas" id="taskList"></ul>
+        </div><!-- fim tarefas -->
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
